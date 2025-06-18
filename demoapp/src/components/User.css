@@ -1,0 +1,15 @@
+.rohit{
+    background-color: orchid;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.myimg{
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.myimg:hover{
+    scale : 1.1;
+    transition: 2s;
+}
