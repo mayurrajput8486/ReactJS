@@ -1,3 +1,4 @@
+import './Emp.css'
 const Emp = () =>{
     const employee = {
         fname : "Virat Kohli",
@@ -8,7 +9,7 @@ const Emp = () =>{
     }
     return(
         <div>
-            <h1>Employee Details</h1>
+            <h1 className='heading'>Employee Details</h1>
             <div>Employee ID - {employee.empid}</div>
             <div>Employee Name - {employee.fname}</div>
             <div>Employee Contact - {employee.contact}</div>
