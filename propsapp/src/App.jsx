@@ -1,5 +1,6 @@
 import Child from './components/Child'
 import About from './components/About';
+
 const App = () =>{
 
   const devInfo = {
@@ -7,6 +8,8 @@ const App = () =>{
     company : "Facebook",
     year : 2013
   }
+
+  
 
   return(
     <div>
