@@ -1,14 +1,17 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 //import Intro from './components/Intro'
 //import Counter from './components/Counter'
-import Calculator from './components/Calculator'
+//import Calculator from './components/Calculator'
+//import Userinfo from './components/Userinfo'
+import BgMode from './components/BgMode'
 const App = () => {
   return (
     <div>
-      <h1 className='text-center'>Learn State in React</h1>
       {/* <Intro/>
-      <Counter/> */}
-      <Calculator/>
+      <Counter/> 
+      <Calculator/> 
+      <Userinfo/>*/}
+      <BgMode/>
     </div>
   )
 }
