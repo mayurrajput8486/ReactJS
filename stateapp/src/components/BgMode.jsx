@@ -46,3 +46,5 @@ const BgMode = () => {
 }
 
 export default BgMode
+
+
