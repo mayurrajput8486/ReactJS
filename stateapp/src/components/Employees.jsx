@@ -13,26 +13,58 @@ const Employees = () => {
     //to store employee data 
     const [employees, setEmployee] = useState([])
 
+    //to edit the data on the basis of index 
+    const [editIndex, setEditIndex] = useState(null)
+
     //Create function to dynamically handle the form inputs
     const handleInput = (e) =>{
         setFormData({...formData,  [e.target.name] : e.target.value})
     } 
 
     //To add data
-    const addData = () =>{
-        const isValid = formData.name && formData.email && formData.contact && formData.company && formData.role
-        if(isValid){
-            setEmployee([...employees, formData])
-            setFormData({
-                name : '',
-                email : '',
-                contact : '',
-                company : '',
-                role : ''
-            })
+    const addUpdateData = () =>{
+        const {name, email, contact, company, role} = formData;
+        //to perform normal validation
+        if( !name || !contact || !company || !email || !role){
+            alert('All Field Required !!!!')
+        }else if(editIndex !== null){
+            //edit old data of records
+            const updateEmpList = [...employees]
+            updateEmpList[editIndex] = formData
+            setEmployee(updateEmpList)
+            setEditIndex(null)   //to clear index for changing button update to add
         }else{
-            alert("All Fields are Mandoatory !!!")
+            //Add new record
+            setEmployee([...employees, formData])
         }
+        setFormData({
+            name : '',
+            email : '',
+            contact : '',
+            company : '',
+            role : ''
+        })
+    }
+    //When edit button is clicked the data will be loaded in form
+    const editHandler = (index) =>{
+        //Load Table data into Form
+        setFormData(employees[index])
+        //          employees[0]
+        setEditIndex(index) //set index to track editing  
+    }
+
+    //Create Function to delete record using index value
+    // use any method to delete records  filter() or  splice()
+    //splice(indexNumber, deleteCount) ----> splice(index,1) 
+    const deleteHandler = (index) =>{
+        //Make a copy of current array using spread operator
+        const updatedEmpList = [...employees]
+
+        //Remove 1 item or record from updateEmpList by using splice(indexNumber, deleteCount)
+        updatedEmpList.splice(index,1)
+
+        //to update the state
+        setEmployee(updatedEmpList)
     }
   return (
     <div>
@@ -94,7 +126,12 @@ const Employees = () => {
                 </select>
             </div>
             <div>
-                <button className="btn btn-success w-100" onClick={addData}>Submit</button>
+                <button className="btn btn-success w-100" onClick={addUpdateData}>
+                    {
+                        editIndex !== null ? 'Update Data' : 'Add Data'
+                        //0       !== null  -     true           false
+                    }
+                </button>
             </div>
         </div>
         <div className="mt-3 w-75 mx-auto">
@@ -107,10 +144,12 @@ const Employees = () => {
                         <th>Contact</th>
                         <th>Old Employer</th>
                         <th>Position</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
+                        employees.length === 0 ? (<tr><td colSpan={7} className="text-center">No Employee Record here. Please Enter New Record</td></tr>) : (
                         employees.map((emp,index)=>{
                             return(
                                 <tr key={index}>
@@ -120,9 +159,14 @@ const Employees = () => {
                                     <td>{emp.contact}</td>
                                     <td>{emp.company}</td>
                                     <td>{emp.role}</td>
+                                    <td>
+                                        <button className="btn btn-warning me-2" onClick={()=>editHandler(index)}>Edit</button>
+                                        <button className="btn btn-danger" onClick={()=>deleteHandler(index)}>Delete</button>
+                                    </td>
                                 </tr>
                             )
                         })
+                    )
                     }
                 </tbody>
             </table>
