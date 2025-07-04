@@ -7,10 +7,11 @@ const Users = () => {
     const getData = async () => {
         try {
             const response = await axios.get('https://jsonplaceholder.typicode.com/users')
-            //console.log(response)
+
+            console.log(response)
 
             const result = response.data
-            //console.log(result)
+            console.log(result)
             setUsers(result)
         } catch (error) {
             console.log('Error while fetching data. Please check url once...')
