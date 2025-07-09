@@ -21,8 +21,12 @@ const Courses = () => {
                                 <h5 className="card-title text-center">React</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
                                 <div className='text-center'>
-                                     <NavLink to="/register" className="btn btn-primary">Enroll Now</NavLink>
+                                    <a href="/syllabus/mern.pdf" target='_blank'download className='btn btn-dark mb-1'>Syllabus</a>
                                 </div>
+                                <div className='text-center'>
+                                    <NavLink to="/register" className="btn btn-primary">Enroll Now</NavLink>
+                                </div>
+                                
                             </div>
                     </div>
 
@@ -31,6 +35,9 @@ const Courses = () => {
                             <div className="card-body">
                                 <h5 className="card-title text-center">Azure</h5>
                                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                                <div className='text-center '>
+                                    <a className="btn btn-dark mb-1" href='/syllabus/aws.pdf' target='_blank' download>Syllabus</a>
+                                </div>
                                 <div className='text-center'>
                                      <NavLink to="/register" className="btn btn-primary">Enroll Now</NavLink>
                                 </div>

@@ -9,6 +9,7 @@ import Contact from './pages/Contact'
 import Register from './pages/Register'
 import Error from './pages/Error.jsx'
 import Footer from './layout/Footer.jsx'
+import Studetails from './pages/Studetails.jsx'
 const App = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const App = () => {
             <Route path='/about' element={<About/>}/>
             <Route path='/contact' element={<Contact/>}/>
             <Route path='/register' element={<Register/>}/>
+            <Route path='/studetails' element={<Studetails/>}/>
             <Route path='*' element={<Error/>}/>
           </Routes>
       </BrowserRouter>
