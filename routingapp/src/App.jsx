@@ -1,5 +1,6 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
+import '../node_modules/bootstrap-icons/font/bootstrap-icons.min.css'
 import Navbar from './layout/Navbar'
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home'
@@ -7,6 +8,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Register from './pages/Register'
 import Error from './pages/Error.jsx'
+import Footer from './layout/Footer.jsx'
 const App = () => {
   return (
     <div>
@@ -21,7 +23,7 @@ const App = () => {
             <Route path='*' element={<Error/>}/>
           </Routes>
       </BrowserRouter>
-      
+      <Footer/>
     </div>
   )
 }
