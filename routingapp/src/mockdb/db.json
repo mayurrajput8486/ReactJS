@@ -1,43 +1,17 @@
 {
   "students": [
     {
-      "id": "6079",
       "fname": "Hardik",
       "lname": "Pandya",
-      "address": "Kothrud",
+      "address": "Viman Nagar, Pune",
       "gender": "male",
-      "state": "Maharashtra",
-      "city": "Pune",
+      "state": "Madhya Pradesh",
+      "city": "Indor",
       "dob": "2025-07-01",
       "pincode": "411051",
       "course": "React",
-      "contact": "7744112200"
-    },
-    {
-      "id": "ae39",
-      "fname": "MS ",
-      "lname": "Dhoni",
-      "address": "Ranchi",
-      "gender": "male",
-      "state": "Maharashtra",
-      "city": "Pune",
-      "dob": "2025-07-07",
-      "pincode": "411063",
-      "course": "Azure",
-      "contact": "8899885522"
-    },
-    {
-      "id": "985c",
-      "fname": "Sachin",
-      "lname": "Tendulkar",
-      "address": "Karve Nagar",
-      "gender": "male",
-      "state": "Maharashtra",
-      "city": "Pune",
-      "dob": "2025-07-23",
-      "pincode": "411052",
-      "course": "DSA",
-      "contact": "8888682545"
+      "contact": "7744112200",
+      "id": "6079"
     }
   ]
 }

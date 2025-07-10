@@ -19,7 +19,6 @@ const Slider = () => {
                     <div className="carousel-item" data-bs-interval="2000">
                         <img src={poster4} className="d-block w-100" alt='poster4' />
                     </div>
-
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>

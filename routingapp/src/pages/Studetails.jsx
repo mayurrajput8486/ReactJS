@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from 'axios'
+import { NavLink } from "react-router-dom"
 const Studetails = () => {
     const [stu, setStu] = useState([])
 
@@ -39,13 +40,14 @@ const Studetails = () => {
                             <th>Pincode</th>
                             <th>Course</th>
                             <th>Contact</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
                             stu.map((stu, index) => {
                                 return (
-                                    <tr>
+                                    <tr key={index}>
                                         <td>{index + 1}</td>
                                         <td>{stu.id}</td>
                                         <td>{stu.fname} {stu.lname}</td>
@@ -57,6 +59,10 @@ const Studetails = () => {
                                         <td>{stu.pincode}</td>
                                         <td>{stu.course}</td>
                                         <td>{stu.contact}</td>
+                                        <td>
+                                            <NavLink to={`/update/${stu.id}`}><button className="btn btn-success me-2"><i className="bi bi-pencil-square"></i></button></NavLink>
+                                            <NavLink to={`/delete/${stu.id}`}><button className="btn btn-danger"><i className="bi bi-x-octagon"></i></button></NavLink>
+                                        </td>
                                     </tr>
                                 )
                             })
