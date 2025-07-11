@@ -12,6 +12,8 @@ import Footer from './layout/Footer.jsx'
 import Studetails from './pages/Studetails.jsx'
 import Update from './pages/Update.jsx'
 import Delete from './pages/Delete.jsx'
+import Admin from './pages/Admin.jsx'
+import Success from './pages/Success.jsx'
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
             <Route path='/studetails' element={<Studetails/>}/>
             <Route path='/update/:stuId' element={<Update/>}/>
             <Route path='/delete/:stuId' element={<Delete/>}/>
+            <Route path='/admin' element={<Admin/>}/>
+            <Route path='/success' element={<Success/>}/>
             <Route path='*' element={<Error/>}/>
           </Routes>
       </BrowserRouter>

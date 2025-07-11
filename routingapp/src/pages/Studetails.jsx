@@ -70,7 +70,10 @@ const Studetails = () => {
                     </tbody>
                 </table>
             </div>
-
+            <div className="text-center m-5">
+                <NavLink to='/admin'><button className="btn btn-primary w-50">Logout</button></NavLink>
+            </div>
+           
         </div>
     )
 }

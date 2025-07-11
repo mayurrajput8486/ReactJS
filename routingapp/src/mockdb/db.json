@@ -12,6 +12,45 @@
       "course": "React",
       "contact": "7744112200",
       "id": "6079"
+    },
+    {
+      "id": "b6a5",
+      "fname": "Apurva",
+      "lname": "Rajput",
+      "address": "Shivane",
+      "gender": "female",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "dob": "2025-07-17",
+      "pincode": "411023",
+      "course": "Python",
+      "contact": "7744771100"
+    },
+    {
+      "id": "2f29",
+      "fname": "Vishal",
+      "lname": "Rajput",
+      "address": "Kalewadi",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "dob": "2025-07-08",
+      "pincode": "444022",
+      "course": "React",
+      "contact": "8985632545"
+    },
+    {
+      "id": "1aeb",
+      "fname": "Virat",
+      "lname": "Kohli",
+      "address": "Karve Nagar, Pune",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "dob": "2025-07-09",
+      "pincode": "411025",
+      "course": "React",
+      "contact": "7123456789"
     }
   ]
 }
