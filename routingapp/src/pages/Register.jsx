@@ -127,7 +127,6 @@ const Register = () => {
                           }
                         </div>
                         <div className="col-md-6 mb-4">
-
                           <select data-mdb-select-init className='form-control' {...register('city',{
                             required : 'Select Any City'
                           })} >
@@ -136,7 +135,7 @@ const Register = () => {
                             <option value="Indor">Indor</option>
                             <option value="Banglore">Banglore</option>
                           </select>
-                           {
+                          {
                             errors.city && <div className='text-danger fw-bold'>{errors.city.message}</div>
                           }
                         </div>
@@ -167,7 +166,8 @@ const Register = () => {
                       </div>
 
                       <div data-mdb-input-init className="form-outline mb-4">
-                        <input type="text" id="form3Example99" className="form-control form-control-lg" {...register('course',{
+                        <input type="text" id="form3Example99" className="form-control form-control-lg" 
+                        {...register('course',{
                           required : 'Course is required',
                           pattern : {
                             value :/^[A-Za-z\s]+$/,

@@ -51,6 +51,21 @@
       "pincode": "411025",
       "course": "React",
       "contact": "7123456789"
+    },
+    {
+      "id": "cbe2",
+      "fname": "Ravindra",
+      "lname": "Jadeja",
+      "address": "Karve Nagar",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "dob": "2025-07-16",
+      "pincode": "411025",
+      "course": "React",
+      "contact": "7744112244",
+      "username": "Ravi#123",
+      "password": "Jadeja#1"
     }
   ]
 }
