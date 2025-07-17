@@ -15,6 +15,8 @@ import Delete from './pages/Delete.jsx'
 import Admin from './pages/Admin.jsx'
 import Success from './pages/Success.jsx'
 import Registerform from './pages/Registerform.jsx'
+import Stulogin from './pages/Stulogin.jsx'
+import Studashboard from './pages/Studashboard.jsx'
 
 const App = () => {
   return (
@@ -33,6 +35,8 @@ const App = () => {
             <Route path='/delete/:stuId' element={<Delete/>}/>
             <Route path='/admin' element={<Admin/>}/>
             <Route path='/success' element={<Success/>}/>
+            <Route path='/stulogin' element={<Stulogin/>}/>
+            <Route path='/studashboard' element={<Studashboard/>}/>
             <Route path='*' element={<Error/>}/>
           </Routes>
       </BrowserRouter>
