@@ -1,7 +1,6 @@
 {
   "students": [
     {
-      "id": "cbe2",
       "fname": "Ravindra",
       "lname": "Jadeja",
       "address": "Karve Nagar",
@@ -10,10 +9,9 @@
       "city": "Pune",
       "dob": "2025-07-16",
       "pincode": "411025",
-      "course": "React",
+      "course": "Angular",
       "contact": "7744112244",
-      "username": "Ravi#123",
-      "password": "Jadeja#1"
+      "id": "cbe2"
     },
     {
       "id": "48fa",
