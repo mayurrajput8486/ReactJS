@@ -3,6 +3,7 @@ import axios from 'axios'
 import { NavLink } from "react-router-dom"
 const Studetails = () => {
     const [stu, setStu] = useState([])
+   
 
     const getData = async () => {
         try {
@@ -14,12 +15,11 @@ const Studetails = () => {
         } catch (err) {
             console.log('Failed to fetch data', err)
         }
-
     }
-
     useEffect(() => {
         getData()
     }, [])
+
     return (
         <div>
             <div className="text-center mt-3 mb-3">
