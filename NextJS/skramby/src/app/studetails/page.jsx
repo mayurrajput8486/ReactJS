@@ -1,6 +1,7 @@
+'use client'
 import { useEffect, useState } from "react"
 import axios from 'axios'
-import { NavLink } from "react-router-dom"
+import Link from "next/link"
 const Studetails = () => {
     const [stu, setStu] = useState([])
    
@@ -60,8 +61,8 @@ const Studetails = () => {
                                         <td>{stu.course}</td>
                                         <td>{stu.contact}</td>
                                         <td>
-                                            <NavLink to={`/update`}><button className="btn btn-success me-2"><i className="bi bi-pencil-square"></i></button></NavLink>
-                                            <NavLink to={`/delete`}><button className="btn btn-danger"><i className="bi bi-x-octagon"></i></button></NavLink>
+                                            <Link href={`/update/${stu.id}`}><button className="btn btn-success me-2">Edit</button></Link>
+                                            <Link href={`/delete/${stu.id}`}><button className="btn btn-danger">Delete</button></Link>
                                         </td>
                                     </tr>
                                 )
@@ -71,7 +72,7 @@ const Studetails = () => {
                 </table>
             </div>
             <div className="text-center m-5">
-                <NavLink to='/admin'><button className="btn btn-primary w-50">Logout</button></NavLink>
+                <Link href='/admin'><button className="btn btn-primary w-50">Logout</button></Link>
             </div>
            
         </div>

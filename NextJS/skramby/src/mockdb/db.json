@@ -1,0 +1,34 @@
+{
+  "students": [
+    {
+      "fname": "Ravindra",
+      "lname": "Jadeja",
+      "address": "Pimpri Chinchwad",
+      "gender": "male",
+      "state": "Madhya Pradesh",
+      "city": "Indore",
+      "dob": "2025-07-16",
+      "pincode": "411025",
+      "course": "React",
+      "contact": "7744112244",
+      "id": "cbe2",
+      "username": "RavindraJ",
+      "password": "Ravi@12"
+    },
+    {
+      "id": "48fa",
+      "fname": "Virat",
+      "lname": "Kohli",
+      "address": "Kothrud",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "dob": "2025-07-14",
+      "pincode": "411052",
+      "course": "Nodejs",
+      "contact": "7744777788",
+      "username": "Virat#k",
+      "password": "Virat#123"
+    }
+  ]
+}

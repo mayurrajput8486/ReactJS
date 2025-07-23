@@ -12,7 +12,7 @@ const Update = () => {
     const getData = async() =>{
         try{
              const result = await axios.get(`http://localhost:8080/students/${stuId}`)
-        //                              http://locahost:8080/students/985c
+        
         console.log(result)
         setValue('fname',result.data.fname)
         setValue('lname',result.data.lname)
