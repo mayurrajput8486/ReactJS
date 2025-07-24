@@ -29,6 +29,36 @@
       "contact": "7744777788",
       "username": "Virat#k",
       "password": "Virat#123"
+    },
+    {
+      "id": "b434",
+      "fname": "Rahul",
+      "lname": "Dravid",
+      "address": "Karve Nagar",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "dob": "2025-07-25",
+      "pincode": "411025",
+      "course": "Python",
+      "contact": "7744558877",
+      "username": "Rahul#D",
+      "password": "Rahul@123"
+    },
+    {
+      "id": "45c0",
+      "fname": "Hardik",
+      "lname": "Pandya",
+      "address": "Karve Nagar, Pune",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "dob": "2025-07-23",
+      "pincode": "411052",
+      "course": "Angular",
+      "contact": "7744556633",
+      "username": "HardikP",
+      "password": "Hardik@123"
     }
   ]
 }
